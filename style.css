@@ -184,6 +184,104 @@ h2 {
     color: #FFFFFF; /* White text for description */
 }
 
+/* Data Cards Section */
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center; /* Center content */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.card-navigation {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+button {
+    padding: 10px 15px;
+    margin: 0 10px; /* Space between buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #FF8C00;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FF8C00; /* Darker blue on hover */
+}
+
+.scrollable-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #444444;
+    height: 500px; /* Increased height */
+    overflow: hidden; /* Disable both horizontal and vertical scrolling */
+    position: relative; /* Positioning for absolute children */
+}
+
+.card {
+    display: none; /* Hide all cards by default */
+    border: 0.5px solid #444444;
+    border-radius: 5px;
+    padding: 20px; /* Increased padding */
+    margin: auto; /* Center the card */
+    background-color: #444444;
+    width: 500px; /* Increased width for larger cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.card.active {
+    display: block; /* Show only the active card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: #FF8C00; /* Change color on hover */
+    color: #FFFFFF; /* Maintain text color on hover */
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    margin: 5px 0; /* Add some space between paragraphs */
+    white-space: normal; /* Allow wrapping in paragraphs */
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+}
+
+.nav-button {
+    background-color: #333333; /* Darker Grey for Buttons */
+    color: #FF8C00; /* Brighter Orange for button text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; /* Show pointer on hover */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #FF8C00; /* Change to orange on hover */
+    color: #FFFFFF; /* Change text color to white on hover */
+}
+
 /* Contact Section */
 .contact-info {
     text-align: center;
@@ -220,5 +318,9 @@ footer {
 
     .problem-container, .update-container {
         flex-direction: column;
+    }
+
+    .data-card-container {
+        flex-direction: column; /* Stack the cards vertically on smaller screens */
     }
 }
