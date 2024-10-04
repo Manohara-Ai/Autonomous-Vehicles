@@ -221,7 +221,7 @@ button:hover {
     border-radius: 8px;
     padding: 20px;
     background-color: #444444;
-    height: 500px; /* Increased height */
+    height: 550px; /* Increased height */
     overflow: hidden; /* Disable both horizontal and vertical scrolling */
     position: relative; /* Positioning for absolute children */
 }
