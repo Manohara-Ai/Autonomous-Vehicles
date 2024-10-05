@@ -148,11 +148,13 @@ h2 {
     color: #FFFFFF;
 }
 
-.problem-card h3, .update-card h3 {
+.problem-card h3,
+.update-card h3 {
     margin: 0;
 }
 
-.problem-card p, .update-card p {
+.problem-card p,
+.update-card p {
     color: #FFFFFF;
 }
 
@@ -283,6 +285,21 @@ footer {
 
     .card p {
         font-size: 14px;
+    }
+
+    /* Hide navbar on smaller screens */
+    .navbar {
+        display: none; /* Hides the navbar */
+    }
+
+    /* Adjust button positioning */
+    .card-navigation {
+        flex-direction: column; /* Stack buttons vertically */
+        margin-top: 20px; /* Space between cards and buttons */
+    }
+
+    .card-navigation button {
+        margin: 5px 0; /* Add space between buttons */
     }
 }
 
