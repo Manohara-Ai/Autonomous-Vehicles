@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1C1C1E; /* Dark Background */
-    color: #FFFFFF; /* White text for contrast */
+    background-color: #1C1C1E;
+    color: #FFFFFF;
     line-height: 1.6;
 }
 
@@ -18,33 +18,44 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333333; /* Darker Grey for Navbar */
+    background-color: #333;
 }
 
 .logo {
-    color: #FFD700; /* Gold for Logo */
+    color: #FFD700;
     font-size: 24px;
     font-weight: 600;
 }
 
 .nav-links {
-    list-style-type: none;
-    margin-left: auto; /* Align the links to the right */
+    list-style: none;
+    display: flex;
+    margin-left: auto;
 }
 
 .nav-links li {
-    display: inline;
     margin: 0 15px;
 }
 
 .nav-links a {
-    color: #FF8C00; /* Change to a brighter orange for links */
+    color: #FF8C00;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #FFD700; /* Hover changes to Gold */
+    color: #FFD700;
+}
+
+/* Hide navbar links on small screens */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 28px;
+    color: #FFD700;
 }
 
 /* Home Section */
@@ -54,6 +65,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .hero-content {
@@ -74,31 +86,27 @@ body {
 
 /* Button Styles */
 .btn {
-    display: inline-block; /* Make it inline with text */
-    background-color: #444444; /* Darker background for button */
-    color: white; /* Text color */
-    padding: 8px 16px; /* Smaller padding for button */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Smaller font size */
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transitions */
-    margin-top: 10px; /* Margin for spacing */
+    background-color: #444;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
 .btn:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
-    background-color: #FF8C00; /* Change color on hover */
-    color: #FFFFFF; /* Maintain text color on hover */
+    transform: scale(1.05);
+    background-color: #FF8C00;
+    color: #FFFFFF;
 }
 
 /* Content Sections */
 .content-section {
     padding: 80px 20px;
     text-align: center;
-    background-color: #2C2C2E; /* Darker grey for content sections */
-    color: #FFFFFF;
+    background-color: #2C2C2E;
     margin: 20px 0;
     border-radius: 10px;
 }
@@ -106,14 +114,13 @@ body {
 h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #FFD700; /* Gold for Section Titles */
+    color: #FFD700;
 }
 
 .project-description {
-    text-align: center; /* Center align text */
-    max-width: 800px; /* Set a maximum width for the paragraph */
-    margin: 0 auto; /* Center the paragraph within its parent */
-    line-height: 1.6; /* Adjust line height for better readability */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* Problem Statements Cards */
@@ -125,32 +132,31 @@ h2 {
 }
 
 .problem-card {
-    background-color: #444444; /* Darker background for cards */
+    background-color: #444;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
     width: 300px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer; /* Show pointer on hover */
 }
 
 .problem-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background-color: #FF8C00; /* Change color on hover */
-    color: #FFFFFF; /* Maintain text color on hover */
+    background-color: #FF8C00;
+    color: #FFFFFF;
 }
 
-.problem-card h3 {
-    margin: 0; /* Remove margin for better centering */
+.problem-card h3, .update-card h3 {
+    margin: 0;
 }
 
-.problem-card p {
-    color: #FFFFFF; /* White text for description */
+.problem-card p, .update-card p {
+    color: #FFFFFF;
 }
 
-/* Updates Cards */
+/* Updates Section */
 .update-container {
     display: flex;
     justify-content: center;
@@ -159,153 +165,80 @@ h2 {
 }
 
 .update-card {
-    background-color: #444444; /* Darker background for cards */
+    background-color: #444;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
     width: 300px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer; /* Show pointer on hover */
 }
 
 .update-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background-color: #FF8C00; /* Change color on hover */
-    color: #FFFFFF; /* Maintain text color on hover */
-}
-
-.update-card h3 {
-    margin: 0; /* Remove margin for better centering */
-}
-
-.update-card p {
-    color: #FFFFFF; /* White text for description */
+    background-color: #FF8C00;
+    color: #FFFFFF;
 }
 
 /* Data Cards Section */
-.container {
-    max-width: 800px;
-    margin: auto;
-    text-align: center; /* Center content */
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
 .card-navigation {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
     padding: 10px 15px;
-    margin: 0 10px; /* Space between buttons */
+    margin: 0 10px;
     border: none;
     border-radius: 5px;
-    background-color: #333333;
+    background-color: #333;
     color: #FF8C00;
     cursor: pointer;
     font-size: 16px;
 }
 
 button:hover {
-    background-color: #FF8C00; /* Darker blue on hover */
+    background-color: #FF8C00;
 }
 
 .scrollable-card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    background-color: #444444;
-    height: 550px; /* Increased height */
-    overflow: hidden; /* Disable both horizontal and vertical scrolling */
-    position: relative; /* Positioning for absolute children */
+    background-color: #444;
+    height: 510px;
+    overflow: hidden;
 }
 
 .card {
-    display: none; /* Hide all cards by default */
-    border: 0.5px solid #444444;
-    border-radius: 5px;
-    padding: 20px; /* Increased padding */
-    margin: auto; /* Center the card */
-    background-color: #444444;
-    width: 500px; /* Increased width for larger cards */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+    display: none;
+    padding: 20px;
+    margin: auto;
+    background-color: #444;
+    width: 500px;
 }
 
 .card.active {
-    display: block; /* Show only the active card */
+    display: block;
 }
 
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background-color: #FF8C00; /* Change color on hover */
-    color: #FFFFFF; /* Maintain text color on hover */
-}
-
-.card h3 {
-    margin: 0 0 10px 0;
-}
-
-.card p {
-    margin: 5px 0; /* Add some space between paragraphs */
-    white-space: normal; /* Allow wrapping in paragraphs */
-}
-
-/* Navigation Buttons */
-.navigation-buttons {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Space out the buttons */
-}
-
-.nav-button {
-    background-color: #333333; /* Darker Grey for Buttons */
-    color: #FF8C00; /* Brighter Orange for button text */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer; /* Show pointer on hover */
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-button:hover {
-    background-color: #FF8C00; /* Change to orange on hover */
-    color: #FFFFFF; /* Change text color to white on hover */
-}
-
-/* Contact Section */
-.contact-info {
-    text-align: center;
-}
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    color: #FFD700; /* Gold for Social Icons */
-    text-decoration: none;
-    font-size: 24px;
+    background-color: #FF8C00;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333333;
+    background-color: #333;
     color: #FFFFFF;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -313,14 +246,44 @@ footer {
 
     .hamburger {
         display: block;
-        cursor: pointer;
     }
 
     .problem-container, .update-container {
         flex-direction: column;
     }
 
-    .data-card-container {
-        flex-direction: column; /* Stack the cards vertically on smaller screens */
+    .problem-card, .update-card {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .content-section {
+        padding: 20px 5px;
     }
 }
