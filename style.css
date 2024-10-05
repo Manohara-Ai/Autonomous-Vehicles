@@ -292,6 +292,13 @@ footer {
         display: none; /* Hides the navbar */
     }
 
+    .autonomous-vehicles {
+        display: flex; /* Adjust display if necessary */
+        flex-direction: column; /* Stacks items vertically if needed */
+        width: 100%; /* Ensures it takes full width */
+        margin-top: 20px; /* Space from previous section */
+    }
+
     /* Adjust button positioning */
     .card-navigation {
         flex-direction: column; /* Stack buttons vertically */
