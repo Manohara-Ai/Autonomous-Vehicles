@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive Video and Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1C1C1E;
+            color: #FFFFFF;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Video Section */
+        .video-section {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        .video-container {
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Image Section */
+        .image-section {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            width: 800px;
+            height: 600px;
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Text Card */
+        .text-card {
+            background-color: #444;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 40px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .text-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            background-color: #FF8C00;
+            color: #FFFFFF;
+        }
+
+        .text-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+
+        .text-card p {
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #FFFFFF;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Section -->
+    <div class="video-section">
+        <div class="video-container">
+            <!-- Embed the Google Drive video using the provided iframe link -->
+            <iframe src="https://drive.google.com/file/d/your-video-id/preview" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-section">
+        <div class="image-container">
+            <!-- Replace with the desired image source -->
+            <img src="https://via.placeholder.com/800x600" alt="Image Description">
+        </div>
+    </div>
+
+    <!-- Text Card -->
+    <div class="text-card">
+        <h3>About the Content</h3>
+        <p>This section showcases how video and image media can work together to create a visually engaging experience. The video above and the image below help emphasize the importance of rich media in web design.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Autonomous Vehicle - Intelligent Navigation and Environmental Mapping. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

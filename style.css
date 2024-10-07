@@ -183,6 +183,14 @@ h2 {
     color: #FFFFFF;
 }
 
+.update-card img {
+    transition: transform 0.3s;
+}
+
+.update-card:hover img {
+    transform: scale(1.05);
+}
+
 /* Data Cards Section */
 .card-navigation {
     display: flex;
@@ -328,5 +336,18 @@ footer {
     button {
         padding: 6px 10px;
         font-size: 12px;
+    }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .update-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .update-card {
+        width: 90%;
+        max-width: 350px; /* Limits width on smaller screens */
     }
 }
