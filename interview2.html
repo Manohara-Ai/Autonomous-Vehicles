@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Drive Video and Image</title>
+    <title>Interview with Dr Chandrakumar R sir</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
@@ -50,24 +50,27 @@
             border-radius: 10px;
         }
 
-        /* Image Section */
-        .image-section {
+        /* PDF Section */
+        .pdf-section {
             width: 100%;
             max-width: 800px;
             margin-bottom: 40px;
+            display: flex;
+            justify-content: center; /* Centers the iframe horizontally */
+            overflow: hidden; /* Ensures the overflow is hidden to keep the layout tidy */
         }
 
-        .image-container {
-            width: 800px;
-            height: 600px;
+        .pdf-container {
+            width: 100%; /* Set width to 100% of its parent */
+            transform: scale(1); /* Default scale */
+            transform-origin: center; /* Sets the transform origin to the center */
             position: relative;
         }
 
-        .image-container img {
+        iframe {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
+            height: 800px;
+            border: none; /* Removes any borders */
         }
 
         /* Text Card */
@@ -108,6 +111,50 @@
             color: #FFFFFF;
             width: 100%;
         }
+
+        /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        /* Adjust video section for smaller screens */
+        .video-section {
+            margin-bottom: 20px; /* Reduce margin */
+        }
+
+        .video-container {
+            padding-bottom: 75%; /* Maintain aspect ratio */
+        }
+
+        /* Adjust PDF section for smaller screens */
+        .pdf-section {
+            margin-bottom: 20px; /* Reduce margin */
+        }
+
+        /* Adjust text card for smaller screens */
+        .text-card {
+            padding: 15px; /* Reduce padding */
+            margin-bottom: 20px; /* Reduce margin */
+        }
+
+        .text-card h3 {
+            font-size: 20px; /* Smaller font size */
+        }
+
+        .text-card p {
+            font-size: 14px; /* Smaller font size */
+        }
+
+        /* Adjust iframe heights for smaller screens */
+        iframe {
+            height: 400px; /* Smaller height for iframes */
+        }
+
+        footer {
+            padding: 15px; /* Reduce padding */
+        }
+
+        footer p {
+            font-size: 14px; /* Smaller footer text */
+        }
+    }
     </style>
 </head>
 <body>
@@ -115,23 +162,25 @@
     <!-- Video Section -->
     <div class="video-section">
         <div class="video-container">
-            <!-- Embed the Google Drive video using the provided iframe link -->
-            <iframe src="https://drive.google.com/file/d/your-video-id/preview" allow="autoplay"></iframe>
+            <!-- Embed the Google Drive video using the corrected iframe link -->
+            <iframe src="https://drive.google.com/file/d/1IBgl4V1TEOcbgPvYXjG2ALqUjLOqCK2W/preview" allow="autoplay"></iframe>
         </div>
     </div>
 
-    <!-- Image Section -->
-    <div class="image-section">
-        <div class="image-container">
-            <!-- Replace with the desired image source -->
-            <img src="https://via.placeholder.com/800x600" alt="Image Description">
+    <p>Empathy Map</p>
+    
+    <!-- PDF Section -->
+    <div class="pdf-section">
+        <div class="pdf-container">
+            <!-- Embed the PDF using an iframe -->
+            <iframe src="https://drive.google.com/file/d/1p50KT5cxlkQ3Xu69V222XMNWNJXCSrtC/preview" width="100%" height="800px"></iframe>
         </div>
     </div>
 
     <!-- Text Card -->
     <div class="text-card">
         <h3>About the Content</h3>
-        <p>This section showcases how video and image media can work together to create a visually engaging experience. The video above and the image below help emphasize the importance of rich media in web design.</p>
+        <p>We interviewed Dr Chandrakumar C, Professor at Mech Dept and former part of WIRIN Lab, who shared expert insights on the future of autonomous vehicles, exploring key challenges and opportunities in intelligent transportation. The page features video interviews and empathy maps, offering a comprehensive view of both innovation and user impact.</p>
     </div>
 
     <!-- Footer Section -->
