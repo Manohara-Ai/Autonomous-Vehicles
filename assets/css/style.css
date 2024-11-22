@@ -117,7 +117,7 @@ body {
 h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #FFD700;
+    color: #FF8C00;
 }
 
 /* Paragraph Styling */
@@ -199,7 +199,7 @@ a.btn:hover {
 .problem-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background-color: #FFD700;
+    background-color: hsl(194, 88%, 65%);
 }
 
 /* Updates Section */
@@ -223,7 +223,7 @@ a.btn:hover {
 .update-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background-color: #FFD700;
+    background-color: hsl(194, 88%, 65%);
 }
 
 /* Data Cards Section */
@@ -283,7 +283,7 @@ button:hover {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    background-color: #FFD700;
+    background-color: hsl(194, 88%, 65%);
 }
 
 /* Footer */
