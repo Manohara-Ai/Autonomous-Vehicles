@@ -190,3 +190,196 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview with Raja Vidya ma'am</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1C1C1E;
+            color: #FFFFFF;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Video Section */
+        .video-section {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        .video-container {
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* PDF Section */
+        .pdf-section {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center; /* Centers the iframe horizontally */
+            overflow: hidden; /* Ensures the overflow is hidden to keep the layout tidy */
+        }
+
+        .pdf-container {
+            width: 100%; /* Set width to 100% of its parent */
+            transform: scale(1); /* Default scale */
+            transform-origin: center; /* Sets the transform origin to the center */
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none; /* Removes any borders */
+        }
+
+        /* Text Card */
+        .text-card {
+            background-color: #444;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 40px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .text-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            background-color: #FF8C00;
+            color: #FFFFFF;
+        }
+
+        .text-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+
+        .text-card p {
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #FFFFFF;
+            width: 100%;
+        }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        /* Adjust video section for smaller screens */
+        .video-section {
+            margin-bottom: 20px; /* Reduce margin */
+        }
+
+        .video-container {
+            padding-bottom: 75%; /* Maintain aspect ratio */
+        }
+
+        /* Adjust PDF section for smaller screens */
+        .pdf-section {
+            margin-bottom: 20px; /* Reduce margin */
+        }
+
+        /* Adjust text card for smaller screens */
+        .text-card {
+            padding: 15px; /* Reduce padding */
+            margin-bottom: 20px; /* Reduce margin */
+        }
+
+        .text-card h3 {
+            font-size: 20px; /* Smaller font size */
+        }
+
+        .text-card p {
+            font-size: 14px; /* Smaller font size */
+        }
+
+        /* Adjust iframe heights for smaller screens */
+        iframe {
+            height: 400px; /* Smaller height for iframes */
+        }
+
+        footer {
+            padding: 15px; /* Reduce padding */
+        }
+
+        footer p {
+            font-size: 14px; /* Smaller footer text */
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Video Section -->
+    <div class="video-section">
+        <div class="video-container">
+            <!-- Embed the Google Drive video using the corrected iframe link -->
+            <iframe src="https://drive.google.com/file/d/19PTWNF7okNzOWPJRGqchX5iQ3PR8JAG9/preview" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+    <p>Empathy Map</p>
+    
+    <!-- PDF Section -->
+    <div class="pdf-section">
+        <div class="pdf-container">
+            <!-- Embed the PDF using an iframe -->
+            <iframe src="https://drive.google.com/file/d/1hjQZSR77tE9F0dmCy9-n-f7gXM3VFcR9/preview" width="100%" height="800px"></iframe>
+        </div>
+    </div>
+
+    <!-- Text Card -->
+    <div class="text-card">
+        <h3>About the Content</h3>
+        <p>We interviewed Raja Vidya, Professor at EEE and Working faculty at WIRIN Lab, who shared expert insights on the future of autonomous vehicles, exploring key challenges and opportunities in intelligent transportation. The page features video interviews and empathy maps, offering a comprehensive view of both innovation and user impact.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Autonomous Vehicle - Intelligent Navigation and Environmental Mapping. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
