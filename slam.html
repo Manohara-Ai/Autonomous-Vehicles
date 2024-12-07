@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time 3D Map Generation using SLAM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Autonomous Vehicles</div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview" class="content-section">
+        <h2>Overview</h2>
+        <p>
+            <b>Simultaneous Localization and Mapping (SLAM)</b> is a critical technology in the field of autonomous vehicles and robotics. SLAM algorithms enable vehicles to build accurate 3D maps of their environment while simultaneously tracking their own position within it. This process relies on sensor fusion, combining inputs from devices like <b>LiDAR</b>, <b>cameras</b>, <b>IMUs</b> (Inertial Measurement Units), and <b>GPS</b> to create highly detailed and accurate representations of the surroundings in real time.
+        </p>
+        <p>
+            The ability to generate real-time 3D maps is essential for autonomous vehicles to navigate complex and dynamic environments. SLAM enables vehicles to operate in unfamiliar or GPS-denied areas by creating their own map and continuously updating it as they move.
+        </p>
+        <div class="image-container">
+            <img src="assets/images/placeholder-slam-overview.jpg" alt="SLAM Overview" style="width:100%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <!-- SLAM Technologies Section -->
+    <section id="technologies" class="content-section">
+        <h2>Technologies Behind SLAM</h2>
+        <p>
+            The effectiveness of SLAM depends heavily on the integration of various technologies. Below are some of the core components used to implement SLAM algorithms:
+        </p>
+        <ul>
+            <b>LiDAR Sensors:</b> LiDAR (Light Detection and Ranging) is a key component for generating 3D maps. It uses laser beams to measure distances and create point clouds that represent the geometry of the environment.<br>
+            <b>Cameras:</b> Cameras provide visual information that can be combined with LiDAR data to enhance map accuracy, allowing for feature detection and depth estimation.<br>
+            <b>IMUs (Inertial Measurement Units):</b> IMUs are used to track vehicle motion by measuring accelerations and rotational rates, providing valuable information for vehicle localization and motion estimation.<br>
+            <b>GPS:</b> In open environments, GPS provides an absolute reference for positioning, which helps in reducing errors in localization and improving map accuracy.<br>
+            <b>Sensor Fusion:</b> The combination of data from these different sensors helps to overcome the individual limitations of each sensor, providing a more accurate and robust solution for real-time 3D mapping.<br>
+        </ul>
+        <p>
+            SLAM algorithms often combine these technologies through various mathematical models and optimization techniques to generate a 3D map while simultaneously estimating the vehicle’s position. The sensor data is fused to minimize errors and provide continuous updates to the map.
+        </p>
+        <div class="image-container">
+            <img src="assets/images/placeholder-slam-technologies.jpg" alt="SLAM Technologies" style="width:100%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <!-- SLAM Algorithms Section -->
+    <section id="algorithms" class="content-section">
+        <h2>SLAM Algorithms</h2>
+        <p>
+            SLAM algorithms are the heart of 3D map generation. There are several types of SLAM algorithms, each optimized for different use cases and environments. Some of the key algorithms include:
+        </p>
+        <ul>
+            <b>EKF-SLAM (Extended Kalman Filter SLAM):</b> A popular algorithm for real-time SLAM that uses a Kalman filter to estimate the vehicle’s position and map the environment simultaneously. It’s suitable for systems with relatively low computational power and relatively small environments.<br>
+            <b>Graph-based SLAM:</b> This approach constructs a graph where nodes represent robot poses and edges represent spatial constraints between them. Optimization techniques, such as <b>pose graph optimization</b>, are used to improve the map accuracy.<br>
+            <b>FastSLAM:</b> FastSLAM uses a particle filter to estimate the vehicle’s position and a set of individual maps for each particle. This method is well-suited for large environments and can handle more complex scenarios.<br>
+            <b>ORB-SLAM:</b> A feature-based SLAM algorithm that uses visual information from cameras to detect features and build a 3D map. ORB-SLAM is robust to both indoor and outdoor environments and is known for its high accuracy.<br>
+        </ul>
+        <p>
+            Each of these algorithms uses different methods for optimizing the localization and mapping process. The choice of algorithm depends on factors like computational resources, environment complexity, and required accuracy.
+        </p>
+        <div class="image-container">
+            <img src="assets/images/placeholder-slam-algorithms.jpg" alt="SLAM Algorithms" style="width:100%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="content-section">
+        <h2>Applications of SLAM in Autonomous Vehicles</h2>
+        <p>
+            Real-time 3D map generation through SLAM has a wide range of applications in autonomous vehicles. Some of the most impactful uses include:
+        </p>
+        <ul>
+            <b>Autonomous Navigation:</b> SLAM provides real-time updates of the vehicle's surroundings, allowing it to navigate without relying on pre-existing maps or GPS signals.<br>
+            <b>Obstacle Detection and Avoidance:</b> By generating accurate 3D maps, SLAM helps detect obstacles, including moving objects, and allows for safe navigation in complex environments.<br>
+            <b>Simultaneous Localization in GPS-Denied Areas:</b> SLAM is essential in environments where GPS signals are weak or unavailable, such as tunnels, indoor spaces, or urban canyons.<br>
+            <b>Path Planning:</b> With real-time mapping, SLAM enables efficient path planning, ensuring that the vehicle chooses the most optimal and safest route based on the dynamic environment.<br>
+        </ul>
+        <p>
+            These applications significantly improve the safety, efficiency, and reliability of autonomous vehicles, enabling them to operate safely in diverse and unpredictable environments.
+        </p>
+        <div class="image-container">
+            <img src="assets/images/placeholder-slam-applications.jpg" alt="SLAM Applications" style="width:100%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="content-section">
+        <h2>Benefits of Real-time 3D Map Generation using SLAM</h2>
+        <p>
+            Real-time 3D map generation with SLAM offers numerous advantages, especially for autonomous vehicles operating in dynamic and unknown environments:
+        </p>
+        <ul>
+            <b>Improved Navigation Accuracy:</b> By constantly updating the vehicle’s map and location, SLAM provides highly accurate navigation, even in environments without GPS signals.<br>
+            <b>Increased Safety:</b> Real-time mapping allows vehicles to identify hazards, obstacles, and other potential risks, ensuring safer operation in both known and unknown areas.<br>
+            <b>Scalability:</b> SLAM algorithms can be scaled to handle larger environments, making them suitable for a wide range of applications, from urban areas to off-road terrains.<br>
+            <b>Reduced Dependency on Pre-built Maps:</b> Unlike traditional systems that rely on pre-loaded maps, SLAM enables autonomous vehicles to create and update their maps in real-time, making them more adaptable and resilient.<br>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><b>B M Manohara</b>: <a href="mailto:bmmanohara.cs23@rvce.edu.in">bmmanohara.cs23@rvce.edu.in</a></p>
+            <p><b>Bhavika Bandu</b>: <a href="mailto:bhavikabandu.cs23@rvce.edu.in">bhavikabandu.cs23@rvce.edu.in</a></p>
+            <p><b>Bhoomika Sundar</b>: <a href="mailto:bhoomikasundar.cs23@rvce.edu.in">bhoomikasundar.cs23@rvce.edu.in</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Autonomous Vehicles - Real-time 3D Map Generation using SLAM. All Rights Reserved.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -3,190 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience we gained by interacting with WIRIN Lab</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Smart Navigation System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        /* General Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #1C1C1E;
-            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            color: #333;
             line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
         }
-
-        /* Video Section */
-        .video-section {
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 40px;
-        }
-
-        .video-container {
-            width: 100%;
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: none;
-            border-radius: 10px;
-        }
-
-        /* PDF Section */
-        .pdf-section {
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 40px;
-            display: flex;
-            justify-content: center; /* Centers the iframe horizontally */
-            overflow: hidden; /* Ensures the overflow is hidden to keep the layout tidy */
-        }
-
-        .pdf-container {
-            width: 100%; /* Set width to 100% of its parent */
-            transform: scale(1); /* Default scale */
-            transform-origin: center; /* Sets the transform origin to the center */
-            position: relative;
-        }
-
-        iframe {
-            width: 100%;
-            height: 800px;
-            border: none; /* Removes any borders */
-        }
-
-        /* Text Card */
-        .text-card {
-            background-color: #444;
-            border-radius: 10px;
+        .content-section {
             padding: 20px;
-            width: 100%;
-            max-width: 800px;
-            text-align: center;
-            margin-bottom: 40px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left; /* Left-align all content */
         }
-
-        .text-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            background-color: #FF8C00;
-            color: #FFFFFF;
-        }
-
-        .text-card h3 {
-            font-size: 24px;
+        h2 {
+            color: #2c3e50;
             margin-bottom: 10px;
-            color: #FFD700;
         }
-
-        .text-card p {
-            font-size: 16px;
-            color: #FFFFFF;
+        p, ul {
+            margin-bottom: 15px;
         }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #FFFFFF;
-            width: 100%;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
-
-        /* Media Queries for Responsive Design */
-    @media (max-width: 768px) {
-        /* Adjust video section for smaller screens */
-        .video-section {
-            margin-bottom: 20px; /* Reduce margin */
+        .image-container img {
+            display: block;
+            margin: 10px 0;
         }
-
-        .video-container {
-            padding-bottom: 75%; /* Maintain aspect ratio */
+        .technologies-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-
-        /* Adjust PDF section for smaller screens */
-        .pdf-section {
-            margin-bottom: 20px; /* Reduce margin */
+        .technology-card {
+            flex: 1;
+            min-width: 300px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
         }
-
-        /* Adjust text card for smaller screens */
-        .text-card {
-            padding: 15px; /* Reduce padding */
-            margin-bottom: 20px; /* Reduce margin */
-        }
-
-        .text-card h3 {
-            font-size: 20px; /* Smaller font size */
-        }
-
-        .text-card p {
-            font-size: 14px; /* Smaller font size */
-        }
-
-        /* Adjust iframe heights for smaller screens */
-        iframe {
-            height: 400px; /* Smaller height for iframes */
-        }
-
-        footer {
-            padding: 15px; /* Reduce padding */
-        }
-
-        footer p {
-            font-size: 14px; /* Smaller footer text */
-        }
-    }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Autonomous Vehicles</div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Video Section -->
-    <div class="video-section">
-        <div class="video-container">
-            <!-- Embed the Google Drive video using the corrected iframe link -->
-            <iframe src="https://drive.google.com/file/d/1Sur2UYici6HVP2gA4qRcoqqUHsXFfqu6/preview" allow="autoplay"></iframe>
+    <!-- Overview Section -->
+    <section id="overview" class="content-section">
+        <h2>Overview</h2>
+        <p>
+            The **Smart Navigation System** goes beyond traditional navigation systems by incorporating real-time communication between vehicles, advanced sensor integration, and AI-powered algorithms. These systems enable autonomous vehicles to process and act on environmental data in real time, paving the way for smarter, safer, and more efficient roadways.
+        </p>
+        <p>
+            Unlike conventional systems that rely on static maps, Smart Navigation Systems utilize **Vehicle-to-Vehicle (V2V)** and **Vehicle-to-Infrastructure (V2I)** communication to deliver dynamic updates. This includes warnings about traffic congestion, road hazards, or changing weather conditions. This interconnected ecosystem significantly enhances decision-making, reduces accidents, and optimizes traffic flow.
+        </p>
+        <div class="image-container">
+            <img src="assets/images/placeholder-overview.jpg" alt="Smart Navigation Overview" style="width:100%; border-radius: 10px;">
         </div>
-    </div>
+        <p>
+            These systems also support **predictive analytics** to preemptively address traffic bottlenecks and identify optimal routes. By integrating this technology into autonomous vehicles, we move closer to a future where roads are safer, greener, and more efficient.
+        </p>
+    </section>
 
-    <p>Empathy Map</p>
-    
-    <!-- PDF Section -->
-    <div class="pdf-section">
-        <div class="pdf-container">
-            <!-- Embed the PDF using an iframe -->
-            <iframe src="https://drive.google.com/file/d/1mh4tS1vx_r9l0i3Pi5LWWanWqD7mwh8u/preview" width="100%" height="800px"></iframe>
+    <!-- Technologies Section -->
+    <section id="technologies" class="content-section">
+        <h2>Key Technologies</h2>
+        <div class="technologies-container">
+            <div class="technology-card">
+                <h3>V2V Communication</h3>
+                <p>
+                    Vehicles equipped with **Vehicle-to-Vehicle (V2V) communication** share data using either **Dedicated Short Range Communication (DSRC)** or **Cellular Vehicle-to-Everything (C-V2X)** protocols. These allow vehicles to relay:
+                </p>
+                <ul>
+                    <li>Speed and acceleration data to maintain optimal following distances.</li>
+                    <li>Location and trajectory information to prevent collisions at intersections.</li>
+                    <li>Hazard alerts, such as icy roads or debris, improving overall road safety.</li>
+                </ul>
+                <img src="assets/images/placeholder-v2v.jpg" alt="V2V Communication" style="width:100%; border-radius: 10px;">
+            </div>
+            <div class="technology-card">
+                <h3>Dynamic Traffic Analysis</h3>
+                <p>
+                    This technology processes large volumes of real-time data from **roadside sensors**, **connected vehicles**, and **traffic control systems**. The data is analyzed using AI to:
+                </p>
+                <ul>
+                    <li>Predict traffic congestion and recommend alternative routes.</li>
+                    <li>Minimize stop-and-go traffic by optimizing signal timing.</li>
+                    <li>Reduce emissions by suggesting eco-friendly driving patterns.</li>
+                </ul>
+                <p>
+                    For example, vehicles can reroute themselves in response to a detected accident, minimizing delays for other drivers.
+                </p>
+                <img src="assets/images/placeholder-traffic.jpg" alt="Dynamic Traffic Analysis" style="width:100%; border-radius: 10px;">
+            </div>
+            <div class="technology-card">
+                <h3>Sensor Fusion</h3>
+                <p>
+                    Combining data from multiple sensors—**LiDAR**, **cameras**, **radar**, and **GPS**—creates a comprehensive view of the environment. Each type of sensor has its advantages:
+                </p>
+                <ul>
+                    <li>LiDAR offers high-resolution 3D mapping for object detection.</li>
+                    <li>Radar provides accurate speed measurements, even in poor visibility.</li>
+                    <li>Cameras recognize road signs, lane markings, and pedestrians.</li>
+                </ul>
+                <p>
+                    This integrated data ensures that vehicles can identify and respond to obstacles with unparalleled precision, making autonomous navigation safer.
+                </p>
+                <img src="assets/images/placeholder-sensors.jpg" alt="Sensor Fusion" style="width:100%; border-radius: 10px;">
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Text Card -->
-    <div class="text-card">
-        <h3>About the Content</h3>
-        <p>We also engaged with experts at the WIRIN Lab, where, due to privacy policies, formal interviews weren't permitted. However, through our interactions, we gained valuable insights into their cutting-edge work on autonomous vehicles, which we explain here in detail.</p>
-    </div>
+    <!-- Applications Section -->
+    <section id="applications" class="content-section">
+        <h2>Applications</h2>
+        <p>
+            The Smart Navigation System can transform several areas of transportation:
+        </p>
+        <ul>
+            <li>
+                **Urban Traffic Management:** Real-time updates optimize traffic flow, adjust signal timings, and reduce congestion.
+            </li>
+            <li>
+                **Highway Systems:** Vehicles communicate to maintain safe distances, reduce lane changes, and form fuel-efficient convoys.
+            </li>
+            <li>
+                **Public Transport:** Smart navigation enhances bus and train scheduling by considering real-time road conditions.
+            </li>
+            <li>
+                **Emergency Response:** Helps ambulances and fire trucks find the quickest and safest routes, reducing response times.
+            </li>
+        </ul>
+        <div class="image-container">
+            <img src="assets/images/placeholder-applications.jpg" alt="Applications" style="width:100%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="content-section">
+        <h2>Benefits</h2>
+        <p>
+            Adopting Smart Navigation Systems offers significant benefits, including:
+        </p>
+        <ul>
+            <li>**Safety:** Real-time data sharing reduces accidents caused by human error.</li>
+            <li>**Efficiency:** Avoids bottlenecks and minimizes travel time.</li>
+            <li>**Environmental Impact:** Reduces fuel consumption and carbon emissions through optimized routing.</li>
+            <li>**Economic Advantages:** Cuts down on fuel and maintenance costs while improving productivity.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>B M Manohara</strong>: <a href="mailto:bmmanohara.cs23@rvce.edu.in">bmmanohara.cs23@rvce.edu.in</a></p>
+            <p><strong>Bhavika Bandu</strong>: <a href="mailto:bhavikabandu.cs23@rvce.edu.in">bhavikabandu.cs23@rvce.edu.in</a></p>
+            <p><strong>Bhoomika Sundar</strong>: <a href="mailto:bhoomikasundar.cs23@rvce.edu.in">bhoomikasundar.cs23@rvce.edu.in</a></p>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Autonomous Vehicle - Intelligent Navigation and Environmental Mapping. All Rights Reserved.</p>
+        <p>&copy; 2024 Autonomous Vehicles - Smart Navigation System. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>

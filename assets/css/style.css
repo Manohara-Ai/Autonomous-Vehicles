@@ -199,7 +199,7 @@ a.btn:hover {
 .problem-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background-color: hsl(194, 88%, 65%);
+    background-color: #FFD700;
 }
 
 /* Updates Section */
@@ -223,7 +223,7 @@ a.btn:hover {
 .update-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background-color: hsl(194, 88%, 65%);
+    background-color: #FFD700;
 }
 
 /* Data Cards Section */
@@ -283,7 +283,7 @@ button:hover {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    background-color: hsl(194, 88%, 65%);
+    background-color: #FFD700;
 }
 
 /* Footer */
