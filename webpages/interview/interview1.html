@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interview with Raja Vidya ma'am</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <style>
         /* General Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            width: 100%; /* Ensures it spans the full width */
+            position: relative; /* Ensure it's placed correctly */
+            box-sizing: border-box; /* Avoids any padding/margin issues */
+            z-index: 1000; /* Ensures the navbar stays above other elements */
         }
 
         body {
@@ -23,6 +37,72 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            width: 100%; /* Ensure body takes full width */
+            margin: 0; /* Remove any default margin */
+            padding: 0; /* Remove any default padding */
+        }
+
+        .logo {
+            color: #FFD700;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #FF8C00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FFD700;
+        }
+
+        /* Hide navbar links on small screens */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .hamburger i {
+            font-size: 28px;
+            color: #FFD700;
+        }
+
+        /* Home Section */
+        .home-section {
+            height: 100vh;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: #ffffff;
+            backdrop-filter: blur(5px);
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 40px;
         }
 
         /* Video Section */
@@ -158,7 +238,6 @@
     </style>
 </head>
 <body>
-
     <!-- Video Section -->
     <div class="video-section">
         <div class="video-container">
@@ -183,6 +262,16 @@
         <p>We interviewed Raja Vidya, Professor at EEE and Working faculty at WIRIN Lab, who shared expert insights on the future of autonomous vehicles, exploring key challenges and opportunities in intelligent transportation. The page features video interviews and empathy maps, offering a comprehensive view of both innovation and user impact.</p>
     </div>
 
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <h2>Contact Us 📧</h2>
+        <div class="contact-info">
+            <p><strong>B M Manohara</strong>: <a href="mailto:bmmanohara.cs23@rvce.edu.in">bmmanohara.cs23@rvce.edu.in</a></p>
+            <p><strong>Bhavika Bandu</strong>: <a href="mailto:bhavikabandu.cs23@rvce.edu.in">bhavikabandu.cs23@rvce.edu.in</a></p>
+            <p><strong>Bhoomika Sundar</strong>: <a href="mailto:bhoomikasundar.cs23@rvce.edu.in">bhoomikasundar.cs23@rvce.edu.in</a></p>
+        </div>
+    </section>
+    
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Autonomous Vehicle - Intelligent Navigation and Environmental Mapping. All Rights Reserved.</p>
